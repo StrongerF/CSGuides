@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/article.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSGuides - Как работает геометрия в CS:GO?</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+
+
+            <!-- Navigation -->
+            <div class="nav">
+                <div class="container">
+                    <div class="nav-row">
+                        
+                        <!-- Logo & Text -->
+                        <a href="/" class="nav-logo">
+                            <img src="/src/images/logo.svg">
+                            <h1>CSGuides</h1> 
+                        </a>
+                        
+                        <!-- Links -->
+                        <ul class="nav-list">
+                            <li class="nav-list__item">
+                                <a href="/articles.html" class="nav-list__link">Статьи</a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="/nademaps.html" class="nav-list__link">Раскидки</a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="/cheatsheets.html" class="nav-list__link">Шпаргалки</a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Content -->
+            <div class="container">
+
+            
+                <header>
+                    <div class="header-wrapper">
+                        <div class="header-content">
+                            <h2>Как работает геометрия в CS:GO?</h2>
+                            <p>Дата добавления: 25.11.2022</p>
+                        </div>
+                        <div class="header-image">
+                            <img src="/src/images/articles/how-does-geometry-work.jpg" alt="">
+                        </div>
+                    </div>
+                </header>
+
+                <main>
+                    <div class="main-text">
+                        <p>Знакомая всем ситуация: вы стоите за углом и ждёте врага, но он неожиданно убивает вас, хотя даже не вышел из-за препятствия. В таких ситуациях обычно винят баги игры, плохой интернет или неправильно выбранное место. Как же всё-таки работает геометрия игры?</p>
+                        
+                        <section>
+                            <a name="camera-feature">
+                                <h2>Особенности камеры</h2>
+                            </a>
+                            <p>В КС существует такая особенность: камера находится не в центре персонажа, она немного смещена вправо. Из-за этой незначительной фишки в половине перестрелок вы оказываетесь в невыгодном положении. При движении на врага справа налево сначала появляется половина вашего тела и только потом голова. И наоборот, если идти слева направо, то противник увидит лишь небольшую часть туловища.</p>
+                            <h3>Пример</h3>
+                            <video src="/src/videos/article/how-does-geometry-work/example1.mp4" controls width="100%"></video>
+                            <p>На профессиональной сцене такие ситуации случаются постоянно. Вот, к примеру, дуэль двух снайперов — Симпла и Фоллена. На первый взгляд Симпл имеет преимущество, так как находится в статичном положении, а бразилец в движении. Но из-за правила правой стороны Фоллен быстрее видит Симпла и легко его убивает.</p>
+                        </section>
+
+                        <section>
+                            <a name="obstacle-distance">
+                                <h2>Расстояние до препятствия</h2>
+                            </a>
+                            <p>Еще сложнее пикать врага из-за угла, так как здесь помимо всего вышеперечисленного еще и радиус обзора добавляется. Чем дальше вы от угла, тем лучше. А чем ближе вы к препятствию, тем меньше у вас угол обзора, а учитывая смещение камеры в сторону, неудачно выбранный ракурс ставит вас в проигрышное положение.</p>
+                            
+                            <a name="distance-example1">
+                                <h3>Пример №1</h3>
+                            </a>
+
+                            <p>На скриншотах видно, что человек, стоящий близко к углу, не видит врага.</p>
+                            <img src="/src/images/articles/material/how-does-geometry-work/distance-example1.jpg" alt="Игрок 1 стоит близко к углу">
+                            
+                            <p>А вот вид от лица противника.</p>
+                            <img src="/src/images/articles/material/how-does-geometry-work/distance-example2.jpg" alt="Игрок 2 смотрит на игрока 1">
+
+                            <p>И чем дальше от угла будет удаляться первый игрок, тем быстрее он сможет заметить врага.</p>
+                            <img src="/src/images/articles/material/how-does-geometry-work/distance-example3.jpg" alt="Игрок 1 отошёл подальше от стены">
+                        
+                            <a name="distance-example2">
+                                <h3>Пример №2</h3>
+                            </a>
+
+                            <p>А вот пример правила, но уже в реальной игре. На мираже неопытные игроки любят занимать угол с правой стороны коннектора. Но большая часть камеры закрыта стенкой, а левая сторона корпуса становится уязвимой.</p>
+                            <img src="/src/images/articles/material/how-does-geometry-work/distance-example4.jpg" alt="Игрок 1 пикает угол в коне">
+
+                            <img src="/src/images/articles/material/how-does-geometry-work/distance-example5.jpg" alt="POV (Point Of View) игрока 2">
+                        </section>
+
+                    
+                        <section>
+                            <a name="conclusion">
+                                <h2>Вывод</h2>
+                            </a>
+                            <p>Для того, чтобы победить в любой перестрелке, нужно запомнить всего несколько простых правил:</p>
+                            <ul>
+                                <li>Старайтесь открываться только правой сторону, а если еще нужно открыться слева, то только на широкий стрейф;</li>
+                                <li>Никогда не стойте близко к стенам и особенно к углам: чем дальше вы будете отходить от них, тем быстрее увидите своего противника.</li>
+                            </ul>
+
+                            <p>Удачи в игре!</p>
+                        </section>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    </div>
+                    <div class="main-contents-block">
+                        <div class="main-contents">
+                            <h3>Содержание:</h3>
+                            <ol>
+                                <li><a href="#camera-feature">Особенности камеры</a></li>
+                                <li><a href="#obstacle-distance">Расстояние до препятствия</a></li>
+                                <ol type="a">
+                                    <li><a href="#distance-example1">Пример №1</a></li>
+                                    <li><a href="#distance-example2">Пример №2</a></li>
+                                </ol>
+                                <li><a href="#conclusion">Вывод</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+
+
+
+
+
+        
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-row">
+                <!-- Footer Description -->
+                <div class="footer-description footer-element">
+                    <p>
+                        <b>CSGuides</b> - это сайт, на котором можно найти 
+                        много полезного по игре CS:GO. Вы можете помочь нам 
+                        в дальнейшей поддержке сайта, пожертвовав денежными 
+                        средствами по 
+                        <a href="https://www.donationalerts.com/r/strongerf" target="_blank">
+                            этой ссылке</a>.
+                    </p>
+                </div>
+
+                <!-- Footer Social Links -->
+                <div class="footer-links footer-element">
+                    <p>Ссылки на соц. сети:</p>
+                    <div class="footer-links-icons">
+                        <a href="https://ru-ru.facebook.com/" target="_blank">
+                            <img src="/src/images/links/facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="/src/images/links/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <img src="/src/images/links/tiktok.svg" alt="TikTok">
+                        </a>
+                        <a href="https://vk.com/str58" target="_blank">
+                            <img src="/src/images/links/vk.svg" alt="VK">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                            <img src="/src/images/links/youtube.svg" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Footer Feedback -->
+                <div class="footer-feedback footer-element">
+                    <a href="https://vk.com/str58" target="_blank">Написать в ВК</a>
+                    <p>Если вы обнаружили ошибку в работе сайта или в тексте, либо же хотите предложить идею, напишите мне.</p>
+                </div>
+
+            </div>
+        </div>
+        </footer>
+    </div>
+</body>
+</html>

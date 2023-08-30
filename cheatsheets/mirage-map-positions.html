@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/cheatsheet.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSGuides - Mirage</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+
+
+            <!-- Navigation -->
+            <div class="nav">
+                <div class="container">
+                    <div class="nav-row">
+                        
+                        <!-- Logo & Text -->
+                        <a href="/" class="nav-logo">
+                            <img src="/src/images/logo.svg">
+                            <h1>CSGuides</h1> 
+                        </a>
+                        
+                        <!-- Links -->
+                        <ul class="nav-list">
+                            <li class="nav-list__item">
+                                <a href="/articles.html" class="nav-list__link">Статьи</a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="/nademaps.html" class="nav-list__link">Раскидки</a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="/cheatsheets.html" class="nav-list__link">Шпаргалки</a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Content -->
+            <div class="container">
+
+            
+                <header>
+                    <h1>Карта Mirage</h1>
+                </header>
+                <div class="slider">
+                    <div class="item">
+                        <h3>Русская версия</h3>
+                        <img src="/src/images/cheatsheets/mirage-map-ru.png" alt="">
+                    </div>
+                    <div class="item">
+                        <h3>Английская версия</h3>
+                        <img src="/src/images/cheatsheets/mirage-map-en.png" alt="">
+                    </div>
+                  
+                    <a class="previous" onclick="previousSlide()">&#10094;</a>
+                    <a class="next" onclick="nextSlide()">&#10095;</a>
+                </div>
+                <script>
+                    showSlides(slideIndex);
+                </script>
+            </div>
+
+
+        
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-row">
+                <!-- Footer Description -->
+                <div class="footer-description footer-element">
+                    <p>
+                        <b>CSGuides</b> - это сайт, на котором можно найти 
+                        много полезного по игре CS:GO. Вы можете помочь нам 
+                        в дальнейшей поддержке сайта, пожертвовав денежными 
+                        средствами по 
+                        <a href="https://www.donationalerts.com/r/strongerf" target="_blank">
+                            этой ссылке</a>.
+                    </p>
+                </div>
+
+                <!-- Footer Social Links -->
+                <div class="footer-links footer-element">
+                    <p>Ссылки на соц. сети:</p>
+                    <div class="footer-links-icons">
+                        <a href="https://ru-ru.facebook.com/" target="_blank">
+                            <img src="/src/images/links/facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="/src/images/links/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <img src="/src/images/links/tiktok.svg" alt="TikTok">
+                        </a>
+                        <a href="https://vk.com/str58" target="_blank">
+                            <img src="/src/images/links/vk.svg" alt="VK">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                            <img src="/src/images/links/youtube.svg" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Footer Feedback -->
+                <div class="footer-feedback footer-element">
+                    <a href="https://vk.com/str58" target="_blank">Написать в ВК</a>
+                    <p>Если вы обнаружили ошибку в работе сайта или в тексте, либо же хотите предложить идею, напишите мне.</p>
+                </div>
+
+            </div>
+        </div>
+        </footer>
+    </div>
+</body>
+</html>

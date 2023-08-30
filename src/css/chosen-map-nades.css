@@ -1,0 +1,114 @@
+.modal-space {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    background-color: #00000022;
+    
+}
+
+.modal-window {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -300px -400px;
+}
+
+.header-dialog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.close-dialog-button {
+    margin: 0 10px 0 0;
+    font-size: 48px;
+    cursor: pointer;
+}
+
+
+.modal-window h1 {
+    margin: 20px 0 0 10px;
+    display: flex;
+}
+
+
+
+.nade-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+
+.nade-element {
+    max-width: 390px;
+    width: 100%;
+}
+
+
+
+.nade {
+    border-radius: 10px;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    transition: box-shadow .1s linear;
+    cursor: pointer;
+}
+.nade:hover {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .2);
+}
+
+
+.nade img {
+    height: 220px;
+}
+
+.nade-text {
+    margin: 8px 0;
+    text-align: center;
+}
+
+.nade-properties {
+    margin: 10px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.nade-property {
+    padding: 3px 10px;
+    margin: 0 3px;
+    border-radius: 10px;
+}
+
+.nade-map-side,
+.nade-tick {
+    display: flex;
+}
+
+.nade-side-t {
+    background: #F1A864;
+}
+.nade-side-ct {
+    background: #64AEF1;
+}
+
+.nade-map {
+    background: #ddd;
+}
+
+.nade-tick128 {
+    background: #82b372;
+}
+
+.nade-tick64 {
+    background: #c47e7e;
+}

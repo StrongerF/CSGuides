@@ -1,0 +1,45 @@
+
+
+
+.nade-block {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: #eee;
+    border-radius: 10px;
+}
+.nade-video {
+    padding: 0;
+    margin: 0;
+}
+
+.nade-video video {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.nade-info {
+    background: #eee;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.nade-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-element {
+    flex-grow: 1;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.info-element:last-child {
+    border-right: none;
+}
+

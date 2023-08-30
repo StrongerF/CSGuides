@@ -1,0 +1,45 @@
+main {
+    margin: 50px auto;
+}
+
+.css-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.cs-block-link {
+    margin: 10px;
+    width: 350px;
+}
+
+.cs-block {
+    width: 100%;
+    border-radius: 10px;
+    background: #eee;
+    box-shadow: none;
+    transition: box-shadow .1s linear;
+}
+
+
+.cs-block:hover {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .2);
+}
+
+
+.cs-block img {
+    height: 210px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.cs-name {
+    padding: 8px;
+    text-align: center;
+    font-weight: 600;
+}
+

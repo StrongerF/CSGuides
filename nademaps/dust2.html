@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/chosen-map-nades.css">
+    <link rel="stylesheet" href="/src/css/nade.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSGuides - Раскидка Dust II</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="modal-space" id="modal-space">
+        <div class="modal-window">
+            <header class="header-dialog">
+                <h1 id="title"></h1>
+                <span class="close-dialog-button" 
+                onclick="CloseDialog()">&times;</span>
+            </header>
+    
+            <main>
+                <div class="nade-block">
+                    <div class="nade-video">
+                        <video id="video" controls></video>
+                    </div>
+                    <div class="nade-info">
+                        <div class="nade-info-wrapper">
+                            <div class="info-element">
+                                <b>Карта:</b> <span id="map"></span>
+                            </div>
+                            <div class="info-element">
+                                <b>Сторона:</b> <span id="side"></span>
+                            </div>
+                            <div class="info-element">
+                                <b>Тикрейт:</b> <span id="tick"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <div class="wrapper">
+        <div class="content">
+
+
+            <!-- Navigation -->
+            <div class="nav">
+                <div class="container">
+                    <div class="nav-row">
+                        
+                        <!-- Logo & Text -->
+                        <a href="/" class="nav-logo">
+                            <img src="/src/images/logo.svg">
+                            <h1>CSGuides</h1> 
+                        </a>
+                        
+                        <!-- Links -->
+                        <ul class="nav-list">
+                            <li class="nav-list__item">
+                                <a href="/articles.html" class="nav-list__link">Статьи</a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="/nademaps.html" class="nav-list__link">Раскидки</a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="/cheatsheets.html" class="nav-list__link">Шпаргалки</a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Content -->
+            <div class="container">
+                <header>
+                    <h1>Раскидка на <b>Dust II</b></h1>
+                </header>
+
+                <main>
+                    <div class="nade-wrapper">
+                                
+                        <!-- Дым T под А - КТ -->
+                        <div class="nade-element">
+                            <a onclick="ShowDialog('Дым под A - КТ', 
+                                                   'Dust II', 
+                                                   'T', 
+                                                   'Любой', 
+                                                   '/src/videos/grenades/dust2/smoke-t-under-a-ct-spawn.mp4');"
+                            onmouseover="ChangeImages('smoke-t-under-a-ct-spawn', true);" onmouseleave="ChangeImages('smoke-t-under-a-ct-spawn', false);">
+                                <div class="nade">
+                                    <div class="nade-text">
+                                        <b>Дым под А - КТ</b>
+                                    </div>
+                                    <img src="/src/images/grenades/dust2/smoke-t-under-a-ct-spawn.jpg" alt="" id="smoke-t-under-a-ct-spawn">
+                                    <div class="nade-properties">
+                                        <div class="nade-map-side">
+                                            <div class="nade-side-t nade-property">
+                                                T
+                                            </div>
+                                            <div class="nade-map nade-property">
+                                                Dust II
+                                            </div>
+                                        </div>
+                                        <div class="nade-tick">
+                                            <div class="nade-tick128 nade-property">
+                                                128 tick
+                                            </div>
+
+                                            <div class="nade-tick64 nade-property">
+                                                64 tick
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Дым CT с мида в верхнюю тёмку -->
+                        <div class="nade-element">
+                            <a onclick="ShowDialog('Дым в верхнюю тёмку', 
+                                                   'Dust II', 
+                                                   'CT', 
+                                                   '64', 
+                                                   '/src/videos/grenades/dust2/smoke-ct-upper-tunnel.mp4');"
+                            onmouseover="ChangeImages('smoke-ct-upper-tunnel', true);" onmouseleave="ChangeImages('smoke-ct-upper-tunnel', false);">
+                                <div class="nade">
+                                    <div class="nade-text">
+                                        <b>Дым в верхнюю тёмку</b>
+                                    </div>
+                                    <img src="/src/images/grenades/dust2/smoke-ct-upper-tunnel.jpg" alt="" id="smoke-ct-upper-tunnel">
+                                    <div class="nade-properties">
+                                        <div class="nade-map-side">
+                                            <div class="nade-side-ct nade-property">
+                                                CT
+                                            </div>
+                                            <div class="nade-map nade-property">
+                                                Dust II
+                                            </div>
+                                        </div>
+                                        <div class="nade-tick">
+
+                                            <div class="nade-tick64 nade-property">
+                                                64 tick
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Дым T мид двери для прохода по шорту -->
+                        <div class="nade-element">
+                            <a onclick="ShowDialog('Дым на двери-мид для прохода по шорту', 
+                                                   'Dust II', 
+                                                   'T', 
+                                                   'Любой', 
+                                                   '/src/videos/grenades/dust2/smoke-t-mid-door-for-short.mp4');"
+                            onmouseover="ChangeImages('smoke-t-mid-door-for-short', true);" onmouseleave="ChangeImages('smoke-t-mid-door-for-short', false);">
+                                <div class="nade">
+                                    <div class="nade-text">
+                                        <b>Дым на двери-мид для прохода по шорту</b>
+                                    </div>
+                                    <img src="/src/images/grenades/dust2/smoke-t-mid-door-for-short.jpg" alt="" id="smoke-t-mid-door-for-short">
+                                    <div class="nade-properties">
+                                        <div class="nade-map-side">
+                                            <div class="nade-side-t nade-property">
+                                                T
+                                            </div>
+                                            <div class="nade-map nade-property">
+                                                Dust II
+                                            </div>
+                                        </div>
+                                        <div class="nade-tick">
+                                            <div class="nade-tick128 nade-property">
+                                                128 tick
+                                            </div>
+
+                                            <div class="nade-tick64 nade-property">
+                                                64 tick
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+
+        
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-row">
+                <!-- Footer Description -->
+                <div class="footer-description footer-element">
+                    <p>
+                        <b>CSGuides</b> - это сайт, на котором можно найти 
+                        много полезного по игре CS:GO. Вы можете помочь нам 
+                        в дальнейшей поддержке сайта, пожертвовав денежными 
+                        средствами по 
+                        <a href="https://www.donationalerts.com/r/strongerf" target="_blank">
+                            этой ссылке</a>.
+                    </p>
+                </div>
+
+                <!-- Footer Social Links -->
+                <div class="footer-links footer-element">
+                    <p>Ссылки на соц. сети:</p>
+                    <div class="footer-links-icons">
+                        <a href="https://ru-ru.facebook.com/" target="_blank">
+                            <img src="/src/images/links/facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="/src/images/links/instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <img src="/src/images/links/tiktok.svg" alt="TikTok">
+                        </a>
+                        <a href="https://vk.com/str58" target="_blank">
+                            <img src="/src/images/links/vk.svg" alt="VK">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                            <img src="/src/images/links/youtube.svg" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Footer Feedback -->
+                <div class="footer-feedback footer-element">
+                    <a href="https://vk.com/str58" target="_blank">Написать в ВК</a>
+                    <p>Если вы обнаружили ошибку в работе сайта или в тексте, либо же хотите предложить идею, напишите мне.</p>
+                </div>
+
+            </div>
+        </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
