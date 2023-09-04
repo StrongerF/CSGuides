@@ -5,3 +5,4 @@ This site was created for the beginners of the game "Counter-Strike: Global Offe
 
 ![Site UI Image](https://github.com/StrongerF/CSGuide/blob/main/CSGuideSite.jpg)
 
+Website link: http://f0859960.xsph.ru/
